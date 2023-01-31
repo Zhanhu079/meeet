@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --background: #013243;
+    --main: #32f5c8;
+    --secondary: rgb(221, 215, 215);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3rem 10rem;
+    position: relative;
+}
+
+section img {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Positioning the avatars */
+
+#av1 {
+    right: 200px;
+    top: 290px;
+}
+
+#av2 {
+    right: 250px;
+    top: -10px;
+}
+
+#av3 {
+    left: -85px;
+    top: 50px;
+}
+
+#av4 {
+    right: 250px;
+    top: 550px;
+}
+
+#av5 {
+    right: 475px;
+    top: 30px;
+}
+
+#av6 {
+    right: 800px;
+    top: 325px;
+}
+
+.navbar {
+    margin-bottom: 85px;
+    position: relative;
+    z-index: 2;
+}
+
+.title-heading {
+    color: var(--main);
+    font-family: 'Sen', sans-serif;
+    font-size: 9rem;
+    line-height: 1;
+    display: inline;
+    position: relative;
+    z-index: 2;
+}
+
+.text {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+.btn {
+    margin-bottom: 30px;
+    background-color: var(--main);
+    color: var(--background);
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 2px 9px 86px -6px rgba(0, 247, 189, 0.88);
+    border: none;
+}
+
+footer {
+    margin: 3rem 10rem;
+    display: flex;
+    align-items: center;
+}
+
+#twitter {
+    float: left;
+}
+
+#twitter:hover {
+    transform: rotate(-10deg);
+}
+
+.footer-text {
+    display: inline;
+    margin-left: 15px;
+}
+
+
+/* Media queries */
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+
+    section, footer {
+        margin: 3rem;
+    }
+
+    .title-heading {
+        font-size: 7rem;
+    }
+
+    .title-text {
+        font-size: 2rem;
+    }
+
+    .text, .btn {
+        position: relative;
+        z-index: 1;
+    }
+
+    #av1 {
+        right: 20px;
+        top: 260px;
+    }
+
+
+    #av6 {
+        right: 200px;
+        top: 275px;
+    }
+     
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    section, footer {
+        margin: 2rem 5rem;
+    }
+
+    .main-section {
+        margin-top: 10rem;
+    }
+
+    .title-heading {
+        font-size: 5rem;
+    }
+
+    .text {
+        font-size: 1.3rem;
+        width: 75%;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        margin-bottom: 8rem;
+    }
+
+    #av1 {
+        top: 250px;
+        right: -5px;
+        width: 90px;
+    }
+
+    #av2 {
+        top: 5px;
+        right: -20px;
+    }
+
+    #av3 {
+        top: 60px;
+        left: 5px;
+    }
+
+    #av4 {
+        right: -5px;
+        width: 250px;
+    }
+
+    #av5 {
+        top: 170px;
+        right: 140px;
+    }
+
+    #av6 {
+        top: 375px;
+        right: 50px;
+    }
+
+
+}
+
+/* Mobile  */
+
+@media screen and (max-width: 600px) {
+
+    section, footer {
+        margin: 1rem;
+    }
+
+    .main-section {
+        margin-top: 7.5rem;
+    }
+
+    .title-heading {
+        font-size: 3.2rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    #twitter {
+        width: 40px;
+    }
+
+    #av1, #av4, #av5 {
+        display: none;
+    }
+
+    #av2 {
+       top: 80px; 
+    }
+
+    #av3 {
+       width: 120px; 
+       top: 100px;
+       left: 20px;
+    }
+
+    #av6 {
+        width: 185px;
+        right: 40px;
+        top: 450px;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+}
